@@ -1,0 +1,17 @@
+{
+  "name": "@sports-talent/utils",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@sports-talent/types": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}

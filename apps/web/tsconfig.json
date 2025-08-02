@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@sports-talent/shared/*": ["../../packages/shared/src/*"],
+      "@sports-talent/ui/*": ["../../packages/ui/src/*"],
+      "@sports-talent/api-client/*": ["../../packages/api-client/src/*"],
+      "@sports-talent/types/*": ["../../packages/types/src/*"],
+      "@sports-talent/utils/*": ["../../packages/utils/src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
